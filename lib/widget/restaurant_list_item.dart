@@ -18,35 +18,38 @@ class RestaurantList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Card(
-        elevation: 10,
-        color: const Color.fromARGB(255, 184, 214, 230),
-        child: Column(
-          children: [
-            Image.network(
-              url,
-              height: 200,
-              width: double.infinity,
-              fit: BoxFit.cover,
-            ),
-            Text(nombreRestaurante),
-            RatingBar.builder(
-              initialRating: rating,
-              minRating: 1,
-              direction: Axis.horizontal,
-              allowHalfRating: true,
-              itemCount: 5,
-              itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
-              itemBuilder: (context, _) => Icon(
-                Icons.star,
-                color: Colors.amber,
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 20),
+      child: Center(
+        child: Card(
+          elevation: 10,
+          color: Color.fromARGB(255, 224, 235, 241),
+          child: Column(
+            children: [
+              Image.network(
+                url,
+                height: 200,
+                width: double.infinity,
+                fit: BoxFit.cover,
               ),
-              onRatingUpdate: (rating) {
-                print(rating);
-              },
-            )
-          ],
+              Text(nombreRestaurante),
+              RatingBar.builder(
+                initialRating: rating,
+                minRating: 1,
+                direction: Axis.horizontal,
+                allowHalfRating: true,
+                itemCount: 5,
+                itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
+                itemBuilder: (context, _) => Icon(
+                  Icons.star,
+                  color: Colors.amber,
+                ),
+                onRatingUpdate: (rating) {
+                  print(rating);
+                },
+              )
+            ],
+          ),
         ),
       ),
     );
