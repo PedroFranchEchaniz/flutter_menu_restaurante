@@ -47,7 +47,8 @@ class RestaurantList extends StatelessWidget {
                 onRatingUpdate: (rating) {
                   print(rating);
                 },
-              )
+              ),
+              Text('${precioMedio.toString()} €')
             ],
           ),
         ),

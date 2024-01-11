@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
                 rating: 5.0),
             RestaurantList(
               nombreRestaurante: 'Beat Burguer',
-              precioMedio: 2.20,
+              precioMedio: 7.20,
               direccion: 'C/Falsa',
               url:
                   'https://cdn2.cocinadelirante.com/1020x600/filters:format(webp):quality(75)/sites/default/files/images/2023/08/como-hacer-hamburguesa-de-atun.jpg',
