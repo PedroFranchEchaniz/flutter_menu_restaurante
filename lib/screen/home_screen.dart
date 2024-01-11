@@ -16,13 +16,16 @@ class HomeScreen extends StatelessWidget {
                 precioMedio: 2.20,
                 direccion: 'C/Falsa',
                 url:
-                    'https://images.ecestaticos.com/cQQaOdJ5IEC4SbwqHFamfhFiAh8=/3x166:2088x1264/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F0d6%2F8de%2F0e0%2F0d68de0e0f424d8279f61e9de356e8a1.jpg'),
+                    'https://images.ecestaticos.com/cQQaOdJ5IEC4SbwqHFamfhFiAh8=/3x166:2088x1264/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F0d6%2F8de%2F0e0%2F0d68de0e0f424d8279f61e9de356e8a1.jpg',
+                rating: 5.0),
             RestaurantList(
-                nombreRestaurante: 'Muralla China',
-                precioMedio: 2.20,
-                direccion: 'C/Falsa',
-                url:
-                    'https://cdn2.cocinadelirante.com/1020x600/filters:format(webp):quality(75)/sites/default/files/images/2023/08/como-hacer-hamburguesa-de-atun.jpg')
+              nombreRestaurante: 'Beat Burguer',
+              precioMedio: 2.20,
+              direccion: 'C/Falsa',
+              url:
+                  'https://cdn2.cocinadelirante.com/1020x600/filters:format(webp):quality(75)/sites/default/files/images/2023/08/como-hacer-hamburguesa-de-atun.jpg',
+              rating: 2.0,
+            )
           ],
         ),
       ),
