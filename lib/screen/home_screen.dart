@@ -25,7 +25,15 @@ class HomeScreen extends StatelessWidget {
               url:
                   'https://cdn2.cocinadelirante.com/1020x600/filters:format(webp):quality(75)/sites/default/files/images/2023/08/como-hacer-hamburguesa-de-atun.jpg',
               rating: 2.0,
-            )
+            ),
+            RestaurantList(
+              nombreRestaurante: 'Fat Boy sushi',
+              precioMedio: 4.20,
+              direccion: 'C/Falsa',
+              url:
+                  'https://content-cocina.lecturas.com/medio/2018/07/19/sushi-variado-tradicional_91be2c41_800x800.jpg',
+              rating: 5.0,
+            ),
           ],
         ),
       ),
